@@ -1,0 +1,336 @@
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  font-size: 1.5rem;
+ border-bottom: 1px solid black;
+ transition: all .35s ease;
+
+}
+.logo-container {
+  display: flex;
+  justify-content: flex-start;
+}
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.middle-items {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+  flex-grow: 1;
+  
+}
+
+.poza-logo{
+  margin-left: 1em;
+  max-width: 150px;
+user-select: none;
+-moz-user-select: none;
+-webkit-user-drag: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+}
+.item-6{
+  margin-right: 1em;
+}
+
+.item-1{
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+.underline{
+  display: inline-block;
+position: relative;
+color: #070707;
+}
+.underline:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.underline:hover:after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.underline-from-right{
+  display: inline-block;
+position: relative;
+color: #070707;
+}
+.underline-from-right:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.underline-from-right:hover:after{
+  transform: scaleX(1);
+  transform-origin: bottom right;
+}
+
+ a{
+  text-decoration: none;
+  color: inherit;
+ }
+ button{
+      border: none;
+      background-color: inherit;
+      cursor: pointer;
+ }
+
+.text-contact{
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+.button-48 {
+  border-radius: 20px;
+appearance: none;
+background-color: #04AA6D ;
+border-width: 0;
+box-sizing: border-box;
+color: #ffffff;
+cursor: pointer;
+display: inline-block;
+font-size: 14px;
+font-weight: 700;
+letter-spacing: 0;
+line-height: 1em;
+margin-right: 20px;
+opacity: 1;
+outline: 0;
+padding: 1.5em 2.2em;
+position: relative;
+text-align: center;
+text-decoration: none;
+text-rendering: geometricprecision;
+text-transform: uppercase;
+transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+vertical-align: baseline;
+white-space: nowrap;
+}
+
+.button-48:before {
+  border-radius: 19px;
+animation: opacityFallbackOut .5s step-end forwards;
+backface-visibility: hidden;
+background-color: #184D47;
+clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+content: "";
+height: 100%;
+left: 0;
+position: absolute;
+top: 0;
+transform: translateZ(0);
+transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+width: 100%;
+}
+
+.button-48:hover:before {
+animation: opacityFallbackIn 0s step-start forwards;
+clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.button-48 span {
+z-index: 1;
+position: relative;
+}
+@media (max-width: 830px) {
+  .middle-items,.button-48 {
+    display: none;
+  }
+}
+
+/* Burger menu styles */
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.burger-line {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  transition: all 0.3s ease;
+}
+
+.hidden-menu {
+  display: none;
+  flex-direction: column;
+  gap: 1em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+@media (max-width: 830px) {
+  .burger-menu {
+    display: none;
+  }
+}
+/* Burger menu animations */
+.rotate-down {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hide-line {
+  opacity: 0;
+}
+
+.rotate-up {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.hide-main {
+  display: none;
+}
+
+@media (max-width: 830px) {
+  .middle-items, .button-48 {
+    display: none;
+  }
+  .burger-menu {
+    display: flex;
+  }
+}
+.menu-container {
+  position: relative;
+}
+
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  z-index: 2;
+}
+
+
+.hidden-menu {
+  display: none;
+  flex-direction: column;
+  gap: 1em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: white;
+  background-color: teal;
+  padding: 1em;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden-menu.show {
+  display: flex;
+}
+@media (max-width: 830px) {
+  .middle-items {
+    display: none;
+  }
+}
+/* Burger menu animations */
+@media (min-width: 830px) {
+  .mamancan {
+    display: none;
+  }
+}
+.text-img-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  margin: 2em;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: -15px 15px 29px -7px rgba(0,0,0,1);
+  -moz-box-shadow: -15px 15px 29px -7px rgba(0,0,0,1);
+  box-shadow: -15px 15px 29px -7px rgba(0,0,0,1);
+}
+
+
+
+.text-container-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+  .text-img-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .text-container-top {
+    order: 1;
+  }
+
+  .image-container {
+    order: 2;
+  }
+}
+
+@media (min-width: 1025px) {
+  .text-img-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.buna2 {
+  font-weight: 500;
+  font-size: 2em;
+  position: relative;
+  bottom: 20px;
+  text-decoration: underline;
+  text-decoration-color: #00e09d;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 830px) {
+  .buna2,.buna {
+    font-size: 1.5em;
+  }
+}
