@@ -244,7 +244,7 @@ position: relative;
   gap: 1em;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 1.2em;
+  font-size: 3em;
   position: fixed;
   top: 0;
   right: 0;
@@ -336,3 +336,13 @@ position: relative;
     font-size: 1.5em;
   }
 }   
+@media (max-width: 830px) {
+  .hidden-menu {
+    font-size: 2em;
+  }
+}
+@media (max-width: 520px) {
+  .hidden-menu {
+    font-size: 1.5em;
+  }
+}
