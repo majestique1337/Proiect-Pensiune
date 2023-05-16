@@ -32,7 +32,7 @@
 
 .poza-logo{
   margin-left: 1em;
-  max-width: 150px;
+  max-width: 130px;
 user-select: none;
 -moz-user-select: none;
 -webkit-user-drag: none;
@@ -344,5 +344,11 @@ position: relative;
 @media (max-width: 520px) {
   .hidden-menu {
     font-size: 1.5em;
+  }
+}
+
+@media (max-width: 830px) {
+   .poza-logo{
+    max-width: 100px;
   }
 }

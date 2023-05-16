@@ -60,7 +60,7 @@ body {
     }
   }
   
-  h1 {
+  h1,.pietre {
     color: rgb(0, 0, 0);
     font-size: clamp(1.1rem, 0.7153rem + 1.6368vw, 1.5rem);
     font-weight: 400;
@@ -165,8 +165,7 @@ body {
 .address {
   font-size: 1.1em;
   text-align: center;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  
 }
 
 .button-container {
@@ -218,7 +217,7 @@ font-size: 1rem;
   margin-bottom: 2em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .facilitati-mic{
     font-size: 1em;
     display: grid;
@@ -242,4 +241,35 @@ font-size: 1rem;
     margin-bottom: 3em;
     margin-top: 3em;
 text-align: center;
+}
+
+.tarife-index-mic{
+  text-decoration: underline;
+  text-decoration-color: #00e09d;
+  text-underline-offset: 3px;
+}
+.buna3{
+  font-weight: 500;
+  font-size: 2em;
+  position: relative;
+ text-decoration: underline;
+ text-decoration-color: #00e09d;
+ text-underline-offset: 3px;
+}
+.buna3-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+  margin-top: 1.5em;
+}
+
+.reznat{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+  margin-top: 1.5em;
+  margin-left: 2em;
+  margin-right: 2em;
 }
