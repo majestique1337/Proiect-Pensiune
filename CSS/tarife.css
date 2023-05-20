@@ -1,0 +1,82 @@
+.facilitati-mic{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+     margin-bottom: 1em;
+   align-items: start;  
+
+  }
+  .text-facilitati{
+    margin: 5px;
+    text-align: center;
+    
+  }
+  .informatii-cazare{
+    margin-bottom: 2em;
+   
+  }
+  .facilitati-unitate{
+    margin-bottom: 2em;
+   margin-top: -20px;
+
+  }
+  
+  @media (max-width: 1000px) {
+    .facilitati-mic{
+      font-size: 1em;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media (max-width: 335px) {
+    .facilitati-mic{
+      font-size: 0.8em;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .grid-tarife{
+    display: grid;
+      grid-template-columns: 1fr ;
+      grid-template-rows: 1fr;
+      grid-column-gap: 1em;
+      grid-row-gap: 1em;
+      margin: 2em;
+      margin-bottom: 3em;
+      margin-top: 3em;
+  text-align: center;
+  }
+  
+  .tarife-index-mic{
+    text-decoration: underline;
+    text-decoration-color: #00e09d;
+    text-underline-offset: 3px;
+  }
+  .buna3{
+    font-weight: 500;
+    font-size: 2em;
+    position: relative;
+   text-decoration: underline;
+   text-decoration-color: #00e09d;
+   text-underline-offset: 3px;
+   margin-bottom: -25px;
+  }
+  .buna3-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+    margin-top: 1.5em;
+  }
+  
+  .reznat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+    margin-top: 1.5em;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  .minmargin{
+    margin-bottom: -5px;
+  }

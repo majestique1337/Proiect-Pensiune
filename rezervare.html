@@ -10,19 +10,14 @@
     <link rel='stylesheet' href="CSS/topnav.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-</head>
+<link rel="stylesheet" type="text/css" href="rezervare.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <body>
-
-
-        
     <div class="container">
         <div class="logo-container"><a href="index.html">
           <img class="poza-logo" src=Opera_Snapshot_2023-05-05_183137_www.brandcrowd.com-removebg-preview.png></a>
@@ -35,8 +30,6 @@
             <div class="item-5"><a href="activitati.html"><span class="underline-from-right">Activitati</span></a></div>
           </div>
           <button class="button-48" role="button"><a href="rezervare.html"> <span class="text-contact">Rezervare</span></a></button>
-          
-        
           </div>
         </div>
     <div class="mamancan"> 
@@ -52,12 +45,43 @@
             <div class="item-3"><a href="rezervare.html"><span class="rezervare-hidden-menu">Rezervare</span> </a></div>
           </div>
         </div>
-    
-     
-    
-<main>
+        
+          <main>
+            <div class="completati"><div class="underlinetext">Va rugam sa completati toate spatiile libere:</div></div>
+            <div id="form-container">
+                <div class="container">
+                    <form id="contact-form">
+                        <label for="name">Nume</label>
+                        <input type="text" id="name" name="name" required>
+        
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+        
+                        <label for="telefon">Telefon</label>
+                        <input type="text" id="telefon" name="telefon" required>
+        
+                        <label for="start">Data Rezervarii inceput:</label>
+                        <input type="text" id="start" name="start">
+        
+                        <label for="end">Data Rezervarii sfarsit:</label>
+                        <input type="text" id="end" name="end">
+        
+                        <label for="message">Mesaj:</label>
+                        <input type="text" id="message" name="message" required>
+                        <div id="success-message" style="display: none;"></div>
 
-</main>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+<div class="contactus">
+<div class="findusat">Ne puteti gasi si la:</div>
+<div class="telefon"><div class="underlinetext">Telefon:</div> 0799999999999</div>
+<div class="email"><div class="underlinetext">Email:</div> casaalunis@gmail.com</div>
+</div>
+
+
+        </main>
 
 <script src="scripts.js"></script>
 </body>
